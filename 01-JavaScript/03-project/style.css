@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* variables */
+
+:root {
+  --clr-soft-orange: hsl(35, 77%, 62%);
+  --clr-soft-red: hsl(5, 85%, 63%);
+
+  --clr-off-white: hsl(36, 100%, 99%);
+  --clr-grayish-blue: hsl(233, 8%, 79%);
+  --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+  --clr-very-dark-blue: hsl(240, 100%, 5%);
+
+  --ff-primary: "Inter", sans-serif;
+
+  --fs-300: 14px;
+  --fs-400: 15px;
+  --fs-500: 18px;
+  --fs-600: 20px;
+  --fs-700: 32px;
+  --fs-900: 40px;
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+@media (width >=768px) {
+  :root {
+    --fs-900: 56px;
+  }
+}
+/* default css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: var(--dark-grayish-blue);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  background-color: var(--clr-off-white);
+}
+
+/* default classes */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.content-start {
+  justify-content: start;
+}
+.content-end {
+  justify-content: end;
+}
+.content-center {
+  justify-content: center;
+}
+.content-between {
+  justify-content: space-between;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1110px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+/* header */
+.primary-header {
+  padding-block: 1.5rem;
+}
+.navbar-toggle-container {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar {
+  display: none;
+}
+
+.nav-links,
+.nav-item,
+.nav-link {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  gap: 1rem;
+}
+
+@media (width >= 768px) {
+  .navbar-toggle-container {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+}
+
+/* hero */
+
+.hero-section {
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+}
+.hero-text h1 {
+  color: var(--clr-very-dark-blue);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-800);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: var(--fs-400);
+  line-height: 26px;
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  color: var(--clr-very-dark-blue);
+  letter-spacing: 4px;
+  font-weight: var(--fw-700);
+  background-color: var(--clr-soft-red);
+  border: none;
+  padding: 10px 32px;
+  text-transform: uppercase;
+}
+
+.hero-aside {
+  background-color: var(--clr-very-dark-blue);
+  padding: 1.75rem 1.25rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  color: var(--clr-grayish-blue);
+}
+
+.aside-header h3 {
+  color: var(--clr-soft-orange);
+  font-size: var(--fs-700);
+  margin-bottom: 2.2rem;
+}
+
+.aside-item {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-grayish-blue);
+  margin-bottom: 2rem;
+}
+.aside-item-3 {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.aside-item h3 {
+  font-size: var(--fs-600);
+  margin-bottom: 1rem;
+  color: var(--clr-off-white);
+}
+
+.aside-item p {
+  font-size: var(--fs-400);
+  line-height: 26px;
+}
+
+@media (width>=768px) {
+  .hero-section {
+    flex-direction: row;
+    gap: 1.875rem;
+    display: flex;
+  }
+
+  .hero-img-container {
+    margin-bottom: 1.875rem;
+  }
+
+  .hero-text {
+    display: flex;
+  }
+
+  .hero-text h1 {
+    width: 50%;
+  }
+  .hero-text > div {
+    width: 50%;
+  }
+
+  .hero-aside {
+    min-width: 350px;
+  }
+}
+
+/*Info section*/
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-article {
+  display: flex;
+  gap: 1.375rem;
+}
+
+.info-number {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-800);
+  color: var(--clr-soft-red);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.info-text h3 {
+  font-size: var(--fs-500);
+  margin-bottom: 1rem;
+  font-weight: var(--fw-700);
+}
+
+@media (width >= 768px) {
+  .info-section {
+    flex-direction: row;
+  }
+}

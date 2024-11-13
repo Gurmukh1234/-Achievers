@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header class="primary-header wrapper flex content-between items-center">
+      <div class="logo-container">
+        <img src="./assets/images/logo.svg" alt="News homepage, logo" />
+      </div>
+
+      <button class="navbar-toggle-container">
+        <img src="./assets/images/icon-menu.svg" alt="" />
+      </button>
+
+      <nav class="navbar">
+        <ul class="nav-links flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section wrapper">
+        <div class="hero-content">
+          <div class="hero-img-container">
+            <picture>
+              <source
+                srcset="./assets/images/image-web-3-desktop.jpg"
+                media="(min-width: 768px)"
+              />
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="hero-text">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div>
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="aside-header">
+            <h3>New</h3>
+          </div>
+          <div class="aside-item aside-item-1">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="aside-item aside-item-2">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="aside-item aside-item-3">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Info section -->
+      <section class="info-section wrapper">
+        <article class="info-article info-article-1">
+          <div class="info-img-container">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+          </div>
+          <div class="info-text">
+            <span>01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+
+        <article class="info-article info-article-2">
+          <div class="info-img-container">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
+          </div>
+          <div class="info-text">
+            <span>02</span>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+
+        <article class="info-article info-article-3">
+          <div class="info-img-container">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+          </div>
+          <div class="info-text">
+            <span>03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
